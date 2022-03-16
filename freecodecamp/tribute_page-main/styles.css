@@ -1,0 +1,71 @@
+body {
+    background: rgba(128, 128, 128, 0.5);
+    font-size: 1.25em;
+}
+
+.header {
+    text-align: center;
+    margin: 5px auto 10px;
+}
+
+.header h1 {
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+#tribute-info {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 10px 8px 5px;
+    margin: auto 10px;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+}
+
+#div-image {
+    margin: 0;
+}
+
+#presentation p {
+    margin: 10px auto;
+    text-align: center;
+}
+
+#img-caption {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#timeline .item {
+    margin-bottom: 5px;
+}
+
+#timeline h2 {
+    text-align: center;
+}
+
+#comment p {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+footer a:visited,
+footer a {
+    color: rgba(255, 60, 0, 0.856);
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:active {
+    color: red;
+}

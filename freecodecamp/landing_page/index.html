@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product landing page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <img id="header-img" src="images/logo.webp">
+        <nav id="nav-bar">
+            <ul>
+                <li>
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li>
+                    <a href="#summary" class="nav-link">Summary</a>
+                </li>
+                <li>
+                    <a href="#pricing" id="last-link" class="nav-link">Pricing</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <section id="email-form">
+                <h2 class="title">Fill this form to receive some of our offers:</h2>
+                <form id="form" action="https://www.freecodecamp.org/email-submit" method="POST">
+                    <label for="email">Please enter your email address</label>
+                    <input id="email" type="email" name="email" placeholder="Enter Your Email..." required>
+                    <input type="submit" id="submit">
+                </form>
+            </section>
+            <section id="features">
+                <h2 class="title">Here are most of our features:</h2>
+                <article class="features-item">
+                    <img class="icon" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDU2IDU1IiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGlkPSJQYWdlLTEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PGcgaWQ9IjAyMS0tLUxpZ2h0d2VpZ2h0LUZhYnJpYyIgZmlsbD0icmdiKDAsMCwwKSIgZmlsbC1ydWxlPSJub256ZXJvIj48cGF0aCBpZD0iU2hhcGUiIGQ9Im0zLjExNyA1Mi40MjYtMi45NzkgMi4zODRjLjQ1MDUzMjc5LTQuNjQyMzg3IDEuNzI0NDMxMDgtOS4xNjc0MDExIDMuNzYyLTEzLjM2MyAzLjQ3LTYuOTQ3IDE3LjYyOC0yMy4zNTQgMzAuMzQ2LTI5LjMwMi02LjkzMSA0Ljk0NS0xOS44IDE1LjczMi0yOC4xNDEgMzIuNDA4LTEuMjM4NzIyOTUgMi41MjU2NzgtMi4yMzkwNTk0MyA1LjE2MTQzNzQtMi45ODggNy44NzN6bTQ4LjA4My00Mi4wMjZjLTEuNDU2IDEuOTM2LTIuODM2IDMuNjYtNC4xNDUgNS4yLTIuOTM2NTc4NC44OTQxMTMtNS45ODU1MTQ1IDEuMzY1NTExMS05LjA1NSAxLjQtLjU1MjI4NDcgMC0xIC40NDc3MTUzLTEgMXMuNDQ3NzE1MyAxIDEgMWMyLjI0MjM3MjctLjAxNDgwNDIgNC40NzcyMjM4LS4yNjExMTAzIDYuNjY5LS43MzUtMS4zMTIwMTA0IDEuNDI3MTg3Ny0yLjczOTg4MzUgMi43NDMzNDYzLTQuMjY5IDMuOTM1LTMuNTY3IDIuNjc3LTExLjA4Mi44NDgtMTEuMTU4LjgzLS40MTA1MjI0LS4xMDIyNzU0LS44NDA5ODUzLjA2NDg1NjMtMS4wNzQ5MzY5LjQxNzM1NTMtLjIzMzk1MTUuMzUyNDk5LS4yMjA3NjE4LjgxNDA4MDMuMDMyOTM2OSAxLjE1MjY0NDcgMS45MTA1NDQ0IDIuMjkwOTcxNiA0LjYxMTI1MDggMy43ODE1NzAzIDcuNTY4IDQuMTc3LTMuNTQ3NjU5NiAzLjMyMzA5Mi03LjI5MDY1OTIgNi40MzEyOTQ1LTExLjIwOSA5LjMwOC02LjI4MiAxLjczMi05LjgxNC0uNzgtOS45NTktLjg4NS0uMzMyMjQzMS0uMjQ5MzM4OC0uNzg0MDM1Ny0uMjY3MzE0OC0xLjEzNTAzODYtLjA0NTE2MS0uMzUxMDAyOS4yMjIxNTM3LS41MjgxMTYxLjYzODE3MTMtLjQ0NDk2MTQgMS4wNDUxNjEuMjkyNjc0IDEuODc0MTUxNyAxLjMwNDcwOTEgMy41NjAyNzg4IDIuODIxIDQuNy0yLjI4NzI0NzIuNjcyNjUxMy00LjY3MDM2NzkuOTYwNTcyMy03LjA1Mi44NTIgNi41MDE0Njg0LTExLjg3MDg0MjYgMTUuNjAxMDE5NC0yMi4xMTkzMzIxIDI2LjYxOS0yOS45OC44NTQxOTA4LS41ODc4NjU2IDEuMTAyMzI0OS0xLjczOTU0MS41NjYtMi42MjctLjUxNDU0NTMtLjkxMTY3NTYtMS42NTAwOTQ3LTEuMjY0OTE4NjYtMi41OTEtLjgwNi0xMi4yIDUuNzA4LTI0LjgwNSAxOS44MTgtMjkuODE2IDI3LjY4NS0xLjEwNi05LjQ2IDEuOTU3LTE0LjIxNiAzLjc2My0xNi4xMjQuNjMzMTY0MTkgMS41ODY2NDc2IDEuNzE1NzkwMDEgMi45NTM5MTg5IDMuMTE1IDMuOTM0LjMwNzE1NzMuMjA0OTMyNy43MDIyNDg5LjIyMzkyNjUgMS4wMjc2NDgzLjA0OTQwMzZzLjUyODE0Ni0uNTE0MTU4LjUyNzM1MTctLjg4MzQwMzZjMC0zLjQ1MyAxLjU4NS0xMC4xNzEgMS45MTItMTEuNTIuODc4Njk1OS0uOTcwODU3MyAxLjgwNTg3NzUtMS44OTY3MDQgMi43NzgtMi43NzQtLjQ0NTQzNDEgMS43Mjk4NDcyLS42NzcxNjE4IDMuNTA3NzY5OS0uNjkgNS4yOTQgMCAuNTUyMjg0Ny40NDc3MTUzIDEgMSAxczEtLjQ0NzcxNTMgMS0xYy4wNDMwNDgtMi42MTE4NDY5LjU1Nzk5ODEtNS4xOTQzODk0IDEuNTItNy42MjMgMi41OTM5MDk2LTEuOTU1NjY5MDMgNS4zOTk5NDktMy42MTI3OTIxMyA4LjM2NS00Ljk0LS4zNjI2MzI3Ljc0MzYxNzAxLS42NDk0MTQ2IDEuNTIxODgxMjYtLjg1NiAyLjMyMy0uMTMyNTQ4My41MzYyNjg0OC4xOTQ3MzE1IDEuMDc4NDUxNjIuNzMxIDEuMjEwOTk5OTYuNTM2MjY4NS4xMzI1NDgzMyAxLjA3ODQ1MTYtLjE5NDczMTQ5IDEuMjExLS43MzA5OTk5Ni40MDgyMzkxLTEuNDM0NzYwMDEgMS4wNTQxOTczLTIuNzkwOTAwMjkgMS45MTEtNC4wMTIgMy44ODI1NTM0LTEuNDI4ODk2NzQgNy45ODExMDYtMi4xODI0NTE0IDEyLjExOC0yLjIyOCA3LjI3NyAwIDExLjI2OCAxLjY0MiAxMi43MzcgMi40MTItMS4yMjYwMjc3IDIuODE1NDAxOTgtMi43NDY4NDY1IDUuNDkzMDA4NDUtNC41MzcgNy45ODh6Ii8+PC9nPjwvZz48L3N2Zz4="
+                    />
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corporis distinctio veritatis sit labore libero nulla quo earum, quasi nihil perferendis voluptatibus inventore error id adipisci laboriosam nostrum ratione odit!</p>
+                </article>
+                <hr class="features-rule">
+                <article class="features-item">
+                    <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyMCA1MjAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUyMCA1MjA7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CjxnIGlkPSJYTUxJRF84ODVfIj4KCTxwYXRoIGlkPSJYTUxJRF84ODZfIiBkPSJNNDE4LjI0OCwzOTcuMDM1Yy0xNi43NDgtMTYuNzQ3LTQyLjIzNy0yMC44OTgtNjMuNDMzLTEwLjMzbC0yNi4zMDIsMTMuMTE0ICAgYy00Mi45MDIsMjEuMzktOTQuMTI3LDIxLjM4OS0xMzcuMDI3LDBsLTI2LjMwMi0xMy4xMTRjLTIxLjE5NS0xMC41NjctNDYuNjg2LTYuNDE3LTYzLjQzMywxMC4zM2wtMjUuNiwyNS42ICAgYy01Ljg1OCw1Ljg1Ny01Ljg1OCwxNS4zNTUsMCwyMS4yMTNDMTI1LjI2LDQ5Mi45NTUsMTkwLjU1Miw1MjAsMjYwLDUyMHMxMzQuNzQtMjcuMDQ1LDE4My44NDgtNzYuMTUyICAgYzUuODU4LTUuODU3LDUuODU4LTE1LjM1NSwwLTIxLjIxM0w0MTguMjQ4LDM5Ny4wMzV6Ii8+Cgk8cGF0aCBpZD0iWE1MSURfODg3XyIgZD0iTTEzMS41OCwzNTEuMzlsLTExLjQtMjIuODhjLTIxLjM5LTQyLjktMjEuMzktOTQuMTIsMC0xMzcuMDJsMTEuNC0yMi44OCAgIGMtMTkuMjctMi4wMi0zNy4xMy0xMC41Mi01MS4wNC0yNC40M2wtMjUuNi0yNS42Yy0yLjc2LTIuNzYtNS4xMS01LjgtNy4wMy05LjA4QzE2Ljc4LDE1My4xNywwLDIwNS4zLDAsMjYwICAgczE2Ljc4LDEwNi44Myw0Ny45MSwxNTAuNWMxLjkyLTMuMjgsNC4yNy02LjMyLDcuMDMtOS4wOGwyNS42LTI1LjZDOTQuNDQsMzYxLjkyLDExMi4zMSwzNTMuNDIsMTMxLjU4LDM1MS4zOXoiLz4KCTxwYXRoIGlkPSJYTUxJRF84ODhfIiBkPSJNNDcyLjA5LDEwOS41Yy0xLjkyLDMuMjgtNC4yNyw2LjMyLTcuMDMsOS4wOGwtMjUuNiwyNS42Yy0xMy45LDEzLjktMzEuNzYsMjIuNC01MS4wNCwyNC40M2wxMS40LDIyLjg4ICAgYzIxLjM5LDQyLjksMjEuMzksOTQuMTIsMCwxMzcuMDJsLTExLjQsMjIuODhjMTkuMjcsMi4wMywzNy4xNCwxMC41Myw1MS4wNCwyNC40M2wyNS42LDI1LjZjMi43NiwyLjc2LDUuMTEsNS44LDcuMDMsOS4wOCAgIEM1MDMuMjIsMzY2LjgzLDUyMCwzMTQuNyw1MjAsMjYwUzUwMy4yMiwxNTMuMTcsNDcyLjA5LDEwOS41eiIvPgoJPHBhdGggaWQ9IlhNTElEXzg4OV8iIGQ9Ik0xMDEuNzUyLDEyMi45NjVjMTAuNTcxLDEwLjU3MSwyNC42MjUsMTYuMTI0LDM4Ljg4NCwxNi4xMjNjOC4zMzEsMCwxNi43MzItMS44OTYsMjQuNTQ5LTUuNzkzICAgbDI2LjMwMi0xMy4xMTRjNDIuOTAxLTIxLjM5MSw5NC4xMjYtMjEuMzksMTM3LjAyNywwbDI2LjMwMiwxMy4xMTRjMjEuMTkzLDEwLjU2Niw0Ni42ODYsNi40MTcsNjMuNDMzLTEwLjMzbDI1LjYtMjUuNiAgIGM1Ljg1OC01Ljg1Nyw1Ljg1OC0xNS4zNTUsMC0yMS4yMTNDMzk0Ljc0LDI3LjA0NSwzMjkuNDQ4LDAsMjYwLDBTMTI1LjI2LDI3LjA0NSw3Ni4xNTIsNzYuMTUyICAgYy01Ljg1OCw1Ljg1Ny01Ljg1OCwxNS4zNTUsMCwyMS4yMTNMMTAxLjc1MiwxMjIuOTY1eiIvPgo8L2c+CgoKCgoKCgoKCgoKCgoKCjwvc3ZnPgo="
+                    />
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit ullam, ipsum quas dicta doloremque voluptas ipsa sit magnam ex doloribus repudiandae nobis veritatis reprehenderit dolorum quia. Cumque aspernatur corporis provident.</p>
+                </article>
+                <hr class="features-rule">
+                <article class="features-item">
+                    <img class="icon" src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PHBhdGggZD0ibTQwMi4zNjQgNjYuMDA4aC04My4yNDN2LTUxLjAwOGMwLTguMjg0LTYuNzE2LTE1LTE1LTE1aC05OS4yNjdjLTguMjg0IDAtMTUgNi43MTYtMTUgMTV2NTEuMDA4aC04MC4yMTdjLTguMjg0IDAtMTUgNi43MTYtMTUgMTV2Mzk2LjUzOWMwIDguMjg0IDYuNzE2IDE1IDE1IDE1aDI4LjMyOXY0LjQ1M2MwIDguMjg0IDYuNzE2IDE1IDE1IDE1czE1LTYuNzE2IDE1LTE1di00LjQ1M2gxNzYuMDY5djQuNDUzYzAgOC4yODQgNi43MTYgMTUgMTUgMTVzMTUtNi43MTYgMTUtMTV2LTQuNDUzaDI4LjMyOWM4LjI4NCAwIDE1LTYuNzE2IDE1LTE1di0zOTYuNTM5YzAtOC4yODQtNi43MTYtMTUtMTUtMTV6bS0xMzEuMzY0IDc5LjA2M3YyNjguNDEyYzAgOC4yODQtNi43MTYgMTUtMTUgMTVzLTE1LTYuNzE2LTE1LTE1di0yNjguNDEyYzAtOC4yODQgNi43MTYtMTUgMTUtMTVzMTUgNi43MTYgMTUgMTV6bS03My4xODIgMjMuODQ5djIyMC43MTVjMCA4LjI4NC02LjcxNiAxNS0xNSAxNXMtMTUtNi43MTYtMTUtMTV2LTIyMC43MTVjMC04LjI4NCA2LjcxNi0xNSAxNS0xNXMxNSA2LjcxNiAxNSAxNXptMTE2LjM2NCAyMjAuNzE1di0yMjAuNzE1YzAtOC4yODQgNi43MTYtMTUgMTUtMTVzMTUgNi43MTYgMTUgMTV2MjIwLjcxNWMwIDguMjg0LTYuNzE2IDE1LTE1IDE1cy0xNS02LjcxNi0xNS0xNXptLTk0LjMyOC0zNTkuNjM1aDY5LjI2N3YzNi4wMDhoLTY5LjI2N3oiLz48L2c+PC9zdmc+"
+                    />
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente pariatur inventore obcaecati distinctio perspiciatis nemo quos iure at ipsa debitis modi, architecto nobis molestias ipsam ad maxime porro, rem suscipit!</p>
+                </article>
+            </section>
+            <section id="summary">
+                <h2 class="title">Here is a video that summarize all of our products' features:</h2>
+                <iframe id="video" src="https://youtube.com/embed/BBZ6WAg4Mbk"></iframe>
+            </section>
+            <section>
+                <h2 class="title">here are our pricings:</h2>
+                <div id="pricing">
+                    <div class="pricing-item">
+                        <h3 class="pricing-header">Small</h3>
+                        <span class="price">100<span class="dollar">$</span></span>
+                        <hr class="pricing-ruler">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum velit excepturi, dicta corporis quia doloribus molestias dolor illum, provident commodi neque mollitia amet atque, magnam dolore quae voluptas quam harum?</p>
+                    </div>
+                    <div class="pricing-item">
+                        <h3 class="pricing-header">Meduim</h3>
+                        <span class="price">160<span class="dollar">$</span></span>
+                        <hr class="pricing-ruler">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe totam sit tempore est rerum excepturi dolorum natus optio ut distinctio voluptatibus quibusdam aut officiis aspernatur, aliquam qui pariatur earum quidem?</p>
+                    </div>
+                    <div class="pricing-item">
+                        <h3 class="pricing-header">Large</h3>
+                        <span class="price">230<span class="dollar">$</span></span>
+                        <hr class="pricing-ruler">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque earum commodi corrupti fuga molestiae molestias nulla iure explicabo enim ullam quidem eveniet quam, sapiente aperiam sit alias beatae fugiat tempora?</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div>This is just a test page for a project and not an actual product landing page.</div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div id="links">
+                <a href="https://github.com/oussamalay99" target="_blank"><img class="link-icon" src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTIgLjVjLTYuNjMgMC0xMiA1LjI4LTEyIDExLjc5MiAwIDUuMjExIDMuNDM4IDkuNjMgOC4yMDUgMTEuMTg4LjYuMTExLjgyLS4yNTQuODItLjU2NyAwLS4yOC0uMDEtMS4wMjItLjAxNS0yLjAwNS0zLjMzOC43MTEtNC4wNDItMS41ODItNC4wNDItMS41ODItLjU0Ni0xLjM2MS0xLjMzNS0xLjcyNS0xLjMzNS0xLjcyNS0xLjA4Ny0uNzMxLjA4NC0uNzE2LjA4NC0uNzE2IDEuMjA1LjA4MiAxLjgzOCAxLjIxNSAxLjgzOCAxLjIxNSAxLjA3IDEuODAzIDIuODA5IDEuMjgyIDMuNDk1Ljk4MS4xMDgtLjc2My40MTctMS4yODIuNzYtMS41NzctMi42NjUtLjI5NS01LjQ2Ni0xLjMwOS01LjQ2Ni01LjgyNyAwLTEuMjg3LjQ2NS0yLjMzOSAxLjIzNS0zLjE2NC0uMTM1LS4yOTgtLjU0LTEuNDk3LjEwNS0zLjEyMSAwIDAgMS4wMDUtLjMxNiAzLjMgMS4yMDkuOTYtLjI2MiAxLjk4LS4zOTIgMy0uMzk4IDEuMDIuMDA2IDIuMDQuMTM2IDMgLjM5OCAyLjI4LTEuNTI1IDMuMjg1LTEuMjA5IDMuMjg1LTEuMjA5LjY0NSAxLjYyNC4yNCAyLjgyMy4xMiAzLjEyMS43NjUuODI1IDEuMjMgMS44NzcgMS4yMyAzLjE2NCAwIDQuNTMtMi44MDUgNS41MjctNS40NzUgNS44MTcuNDIuMzU0LjgxIDEuMDc3LjgxIDIuMTgyIDAgMS41NzgtLjAxNSAyLjg0Ni0uMDE1IDMuMjI5IDAgLjMwOS4yMS42NzguODI1LjU2IDQuODAxLTEuNTQ4IDguMjM2LTUuOTcgOC4yMzYtMTEuMTczIDAtNi41MTItNS4zNzMtMTEuNzkyLTEyLTExLjc5MnoiIGZpbGw9IiMyMTIxMjEiLz48L3N2Zz4="
+                    /></a>
+                <a href="https://www.linkedin.com/in/oussama-lay-9087851b5/" target="_blank"><img class="link-icon" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0yNTYgMGMtMTQxLjM2MzI4MSAwLTI1NiAxMTQuNjM2NzE5LTI1NiAyNTZzMTE0LjYzNjcxOSAyNTYgMjU2IDI1NiAyNTYtMTE0LjYzNjcxOSAyNTYtMjU2LTExNC42MzY3MTktMjU2LTI1Ni0yNTZ6bS03NC4zOTA2MjUgMzg3aC02Mi4zNDc2NTZ2LTE4Ny41NzQyMTloNjIuMzQ3NjU2em0tMzEuMTcxODc1LTIxMy4xODc1aC0uNDA2MjVjLTIwLjkyMTg3NSAwLTM0LjQ1MzEyNS0xNC40MDIzNDQtMzQuNDUzMTI1LTMyLjQwMjM0NCAwLTE4LjQwNjI1IDEzLjk0NTMxMy0zMi40MTAxNTYgMzUuMjczNDM3LTMyLjQxMDE1NiAyMS4zMjgxMjYgMCAzNC40NTMxMjYgMTQuMDAzOTA2IDM0Ljg1OTM3NiAzMi40MTAxNTYgMCAxOC0xMy41MzEyNSAzMi40MDIzNDQtMzUuMjczNDM4IDMyLjQwMjM0NHptMjU1Ljk4NDM3NSAyMTMuMTg3NWgtNjIuMzM5ODQ0di0xMDAuMzQ3NjU2YzAtMjUuMjE4NzUtOS4wMjczNDMtNDIuNDE3OTY5LTMxLjU4NTkzNy00Mi40MTc5NjktMTcuMjIyNjU2IDAtMjcuNDgwNDY5IDExLjYwMTU2My0zMS45ODgyODIgMjIuODAwNzgxLTEuNjQ4NDM3IDQuMDA3ODEzLTIuMDUwNzgxIDkuNjA5Mzc1LTIuMDUwNzgxIDE1LjIxNDg0NHYxMDQuNzVoLTYyLjM0Mzc1cy44MTY0MDctMTY5Ljk3NjU2MiAwLTE4Ny41NzQyMTloNjIuMzQzNzV2MjYuNTU4NTk0YzguMjg1MTU3LTEyLjc4MTI1IDIzLjEwOTM3NS0zMC45NjA5MzcgNTYuMTg3NS0zMC45NjA5MzcgNDEuMDE5NTMxIDAgNzEuNzc3MzQ0IDI2LjgwODU5MyA3MS43NzczNDQgODQuNDIxODc0em0wIDAiLz48L3N2Zz4="
+                    /></a>
+                <a href="mailto:oussamalay99@gmail.com?subject=message from landing page" target="_blank"><img class="link-icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHJlY3QgeD0iNjQiIHk9IjY0IiBzdHlsZT0iZmlsbDojRUNFRkYxOyIgd2lkdGg9IjM4NCIgaGVpZ2h0PSIzODQiLz4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNDRkQ4REM7IiBwb2ludHM9IjI1NiwyOTYuMzg0IDQ0OCw0NDggNDQ4LDE0OC42NzIgIi8+DQo8cGF0aCBzdHlsZT0iZmlsbDojRjQ0MzM2OyIgZD0iTTQ2NCw2NGgtMTZMMjU2LDIxNS42MTZMNjQsNjRINDhDMjEuNTA0LDY0LDAsODUuNTA0LDAsMTEydjI4OGMwLDI2LjQ5NiwyMS41MDQsNDgsNDgsNDhoMTZWMTQ4LjY3Mg0KCWwxOTIsMTQ3LjY4TDQ0OCwxNDguNjRWNDQ4aDE2YzI2LjQ5NiwwLDQ4LTIxLjUwNCw0OC00OFYxMTJDNTEyLDg1LjUwNCw0OTAuNDk2LDY0LDQ2NCw2NHoiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K"
+                    /></a>
+            </div>
+            <div><strong>Copyrights 2020 &copy;</strong></div>
+        </footer>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js "></script>
+
+</body>
+
+</html>

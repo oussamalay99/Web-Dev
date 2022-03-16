@@ -1,0 +1,95 @@
+body {
+    height: 100%;
+    background: linear-gradient(135deg, #190f7594, #f67a69af)no-repeat;
+    font-family: Roboto, sans-serif;
+    color: rgb(32, 4, 68);
+    font-size: 1.1em;
+}
+
+header {
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+    width: 80%;
+    margin: 3% auto 3%;
+    background: rgba(200, 35, 70, 0.15);
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 5px 10px 5px 5px rgb(109, 76, 76);
+    padding: 10px 20px 10px 10px;
+}
+
+label {
+    display: flex;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    margin-right: 5px;
+    border: 1px solid rgb(113, 5, 255);
+    font-size: 0.85em;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.inline-block {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 0.625rem;
+}
+
+hr {
+    width: 75%;
+    opacity: .8;
+    margin-bottom: 20px;
+}
+
+.strong {
+    font-weight: 700;
+}
+
+#comment {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid rgb(113, 5, 255);
+    width: 100%;
+    padding: 5px;
+    font-size: 1.2em;
+    min-height: 100px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    background-color: rgba(128, 75, 172, 0.658);
+    padding: 5px;
+    color: #E5E5E5;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(128, 75, 172, 0.966);
+}
+
+.block:focus,
+textarea:focus {
+    border: 1px solid rgb(113, 5, 255);
+    box-shadow: 2px 3px 3px #DDD;
+}

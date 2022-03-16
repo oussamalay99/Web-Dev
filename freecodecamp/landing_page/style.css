@@ -1,0 +1,246 @@
+#header-img {
+    height: 50px;
+    width: 150px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0px 0px 40px;
+    background: linear-gradient(135deg, rgb(73, 19, 19), rgb(187, 6, 6));
+    padding: 5px 10px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#nav-bar li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 40px;
+}
+
+#nav-bar li a,
+#nav-bar li a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 1.05em;
+    padding: 5px;
+    border: 0px solid black;
+    border-radius: 5px;
+}
+
+#nav-bar li a:hover,
+#nav-bar li a:active {
+    background-color: red;
+    color: black;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+main section {
+    margin-bottom: 50px;
+}
+
+#email-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px inset rgb(224, 97, 97);
+    border-radius: 8px;
+    box-shadow: 8px 5px 10px 4px #333;
+    padding: 10px 10px 20px;
+    text-align: center;
+    margin-bottom: 2.75rem;
+    min-height: 250px;
+    font-size: 1.1em;
+}
+
+#email {
+    display: block;
+    margin: 5px auto;
+    width: 80%;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 1.05em;
+}
+
+#submit {
+    display: block;
+    width: 20%;
+    height: 40px;
+    margin: 10px auto;
+    padding: 5px;
+    color: whitesmoke;
+    font-size: 1.1em;
+    font-weight: 700;
+    background-color: rgb(226, 56, 56);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: red;
+}
+
+.title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+}
+
+.features-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.features-rule {
+    width: 90%;
+    opacity: .3;
+    margin: 10px auto;
+}
+
+#video {
+    display: block;
+    height: 300px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+#pricing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.pricing-item {
+    display: flex;
+    border: 2px solid;
+    padding: 5px 8px;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(251, 247, 2, 0.459);
+}
+
+.pricing-header {
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #1310d3;
+}
+
+.price {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.dollar {
+    color: rgb(2, 112, 2);
+}
+
+.pricing-ruler {
+    width: 80%;
+    opacity: .8;
+    margin: 5px;
+}
+
+.link-icon {
+    width: 40px;
+    height: 40px;
+}
+
+#links {
+    margin-top: 10px;
+}
+
+footer {
+    background: linear-gradient(180deg, rgba(255, 43, 6, 0.76), rgba(78, 13, 1, 0.76));
+    padding: 15px;
+    line-height: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+@media (min-width:720px) and (max-width: 930px) {
+    #container {
+        max-width: 700px;
+        width: 100%;
+    }
+}
+
+@media (min-width:500px) and (max-width: 719px) {
+    #container {
+        max-width: 480px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 499px) {
+    #container {
+        width: 90%;
+    }
+}
+
+@media (max-width:560px) {
+    * {
+        font-size: 1.05em;
+    }
+    header {
+        flex-direction: column;
+    }
+    #header-img {
+        width: 70%;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    #nav-bar li {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .icon {
+        width: 100px;
+        height: 100px;
+    }
+    .features-item {
+        align-items: flex-start;
+    }
+    #pricing {
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+    }
+}

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Technical Documentation</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Prerequisites" class="nav-link">Prerequisites</a>
+        <a href="#Interactive_Mode_VS_Script_Mode" class="nav-link">Interactive Mode VS Script Mode</a>
+        <a href="#Hello_World" class="nav-link">Hello World</a>
+        <a href="#Variables" class="nav-link">Variables</a>
+        <a href="#Built-in_Data_Types" class="nav-link">Built-in Data Types</a>
+        <a href="#Python_Operators" class="nav-link">Python Operators</a>
+        <a href="#If_Statement" class="nav-link">If Statement</a>
+    </nav>
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <div class="section-content">
+                <p>In this documentation, we are going to present one of the most used programming languages nowadays which is <b>Python</b>. We will present just some basics of this language and try to cover all the most basic statements. If you were curious and you want to know more about this language, please click on this <a href="https://docs.python.org/3/">link</a> that will take you to the official documentation of python. Let's know more about this language.</p>
+
+                <img src="IMG/prog_lang_rating.jpeg" alt="Programming languages' ratings">
+                
+                <p>Python is an <em>intrepreted high-level</em> programming language which means that this language doesn't need a compilation phase to execute the program and its keywords and statements are sort of close to human language and have some sort of abstraction from the machine language. This language provide different tools that allow you to write programs for different purposes like <em>web development</em>, <em>machine learning</em> or <em>data visualization</em> and other fields. One of the features that makes this language worth learning is that it follows an <em>object-oriented</em> approach that makes it easier to model some objects in our real world and write applications. It provides also the <em>dynamic typing</em> and <em>garbage collection</em> features which make coding easier. In addition to <em>object-oriented programming</em>, this language supports other <em>programming paradigms</em> such as <em>Fonctional Programming</em>. What makes this language easier and worth to learn is that its standard library conntains a lot of tools that allow you to make useful programs.</p>
+
+                <p>Guido van Rossum began working on Python in the late 1980's, as a successor to the ABC programming language, and first released it in 1991 as Python 0.9.1. Python 2.0 was released in 2000 and introduced new features, such as list comprehensions and a garbage collection system using reference counting and was discontinued with version 2.7.18 in 2020. Python 3.0 was released in 2008 and was a major revision of the language that is not completely backward-compatible, with much Python 2 code not running unmodified on Python 3.</p>
+
+                <p>In the next sections, we ll present some of the basic statements offered by this language. Remember that if you are searching for more advanced and detailed documentation, we advise you to visit this <a href="https://docs.python.org/3/">official documentation site</a>.</p>
+            </div>
+
+        </section>
+        <section id="Prerequisites" class="main-section">
+            <header>Prerequisites</header>
+            <div class="section-content">
+                <p>There is no need to have an earlier experience in another programming language in order to learn Python but having such as an experience will make learnig python so much easier especially if you are familiar with the<em> object-oriented programming</em> approach. The following points are not really necessary in the process of learning python but it would be better if you are able to fulfill them:
+                    <ul>
+                        <li>A basic knowledge of any <b>programming language concepts</b> like what is a <em>loop</em>, what <em>if and else</em> does, how <em>operators</em> are used, etc;</li>
+                        <li>A <b>machine</b> where you can install the necessities of this language;</li>
+                        <li>A decent <b>connection</b>;</li>
+                        <li>Minimum knowledge of installing any kind of software;</li>
+                        <li>The most important thing is the <b>perseverence</b> and the <b>willingness</b> of learning this wonderful language;</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+        <section id="Interactive_Mode_VS_Script_Mode" class="main-section">
+            <header>Interactive Mode VS Script Mode</header>
+            <div class="section-content">
+                <p>In Python, there are actually two ways to run a code which are :
+                    <ul>
+                        <li><b>Interactive Mode</b></li>
+                        <li><b>Script Mode</b></li>
+                    </ul>
+                </p><br>
+                <p>The <b>Intercative Mode</b>, that is called also <b>REPL</b>, provides a quick way of running blocks or a single line of Python code. This code is executed via the Python shell that come with python installation. This mode is really useful when you want to just run some basic commands or you are new to Python programming. You can access the Python Shell by typing the "py" command on Windows command prompt like this:</p>
+                <img src="IMG/interactive_mode.png" alt="terminal snnipet after typing py command">
+                <p>The <code>>>></code> indicates that the Python shell is ready to execute and send your commands t the Python interpreter. The result is immediately displayed on the Python shell as soon as the Python interpreter interprets the command</p>
+                <p>To run your python statements, just type them and hit enter key. You will get the result immediately unlike the Script Mode. Here is an example of displaying the message "Hello World !" using the Interactive Mode :</p>
+                <img src="IMG/Interactive_mode_example.png" alt="Hello World in Interactive Mode">
+                <p>Here are some of the advantages of the Interactive Mode :
+                    <ol>
+                        <li>Helpful when your script is extremely short and you want immediate results.</li>
+                        <li>Faster as you only have to type a command and then press the enter key to get the results.</li>
+                        <li>Good for beginners who need to understand Python basics.</li>
+                    </ol>
+                </p>
+                <p>But still there are some disadvantages of this mode too:
+                    <ol>
+                        <li>Editing the code in interactive mode is hard as you have to move back to the previous commands or else you have to rewrite the whole command again.</li>
+                        <li>It's very tedious to run long pieces of code.</li>
+                    </ol>
+                </p>
+                <br>
+                <p>On the other hand, the <b>Script Mode</b> is used for writing long pieces of Python code or for Python Scripts that span multiple files. In this mode, you write your code in a text file and save it with the <code>.py</code> extension which stands for Python. You can use any text editor for that like Sublime Text, Atom or even the Notepad. Here is an example of a Python script that will show us the message "Hello World !" :</p>
+                <img src="IMG/Script_Mode_File.png" alt="Hello World In Script Mode">
+                <p>In order to run this program, we will use the Windows Command Prompt. You just need to go to the folder containig your program vie the terminal and then use the command <code>py &lt;fileName&gt;</code>. Here is an example of running the Python Program showed earlier :</p>
+                <img src="IMG/Script_Mode_Run.png" alt="running the Hello World In Script Mode">
+                <p>Here are some advantages of this mode :
+                    <ol>
+                        <li>It is easy to run large pieces of code.</li>
+                        <li>Editing your script is easier in script mode.</li>
+                        <li>Good for both beginners and experts.</li>
+                    </ol>
+                    <br>
+                    but there are some disadvantages too :
+                    <ol>
+                        <li>Can be tedious when you need to run only a single or a few lines of code.</li>
+                        <li>You must create and save a file before executing your code.</li>
+                    </ol>
+                </p>
+            </div>
+        </section>
+        <br>
+        <section id="Hello_World" class="main-section">
+            <header>Hello World</header>
+            <div class="section-content">
+                <p>In this section, we will present a program that will show the message "Hello World !" using Python. This is like the first program you learn in any other language. It helps you to notice the basics of a language even before learning it.</p>
+                <pre>
+                    <code>print("Hello World !")</code>
+                </pre>
+                <p><b>print</b> is a function that is predefined in the standard library of Python that we can use to display messages on the output screen or other standard output device. The message can be a string, or any other object, the object will be converted into a string before written to the screen.</p>
+            </div>
+        </section>
+        <br>
+        <section id="Variables" class="main-section">
+            <header>Variables</header>
+            <div class="section-content">
+                <p>Variables are containers for storing data values. There are some rules that should be respected in order to name these variables :
+                    <ul>
+                        <li>A variable name should start with a letter or an underscore character.</li>
+                        <li>A variable name cannot start with a number.</li>
+                        <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9 and _).</li>
+                        <li>Variable names are case-sensitive.</li>
+                    </ul>
+                </p>
+                <p>Here are some examples of valid variable names :
+                    <pre>    
+                    <code>
+                    x=5
+                    myvar = "jhon"
+                    _MyVar = "jhon"
+                    Age = 20
+                    </code>
+                    </pre>             
+                </p>
+                <p>These are invalid variable names :
+                    <pre>    
+                    <code>
+                    5x=5
+                    my var = "jhon"
+                    My-Var = "jhon"
+                    </code>
+                    </pre>             
+                </p>
+                <p>
+                    One of  the features offered by python is that we can assign values to multiple variables in just one line. You should just make sure that the number of values matches the number of values to avoid an error. Here is an example :
+                    <pre>
+                    <code>
+                    x, y, z = "Orange", "Banana", "Cherry"
+                    </code>
+                    </pre>
+                    You could also assign one value to multiple variables :
+                    <pre>
+                    <code>
+                    x = y = z = "Orange"
+                    </code>
+                    </pre>
+                </p>
+            </div>
+        </section>
+        <br>
+        <section id="Built-in_Data_Types" class="main-section">
+            <header>Built-in Data Types</header>
+            <div class="section-content">
+                <p>
+                    Variables can store data of different types, and different types can do different things.
+                    Python has the following data types built-in by default :
+                    <ul>
+                        <li>Text Type: <code>str</code>.</li>
+                        <li>Numeric Type: <code>int</code>, <code>float</code>, <code>complex</code>.</li>
+                        <li>Sequence Type: <code>list</code>, <code>tuple</code>, <code>range</code>.</li>
+                        <li>Mapping Type: <code>dict</code>.</li>
+                        <li>Set Type: <code>set</code>, <code>frozenset</code>.</li>
+                        <li>Boolean Type: <code>bool</code>.</li>
+                        <li>Binary Type: <code>bytes</code>, <code>bytearray</code>, <code>memoryview</code>.</li>
+                    </ul>
+                    In order to get the data type of a specific variable, you can use the <code>type()</code> function :
+                    <pre>
+                    <code>
+                    x=5
+                    print(type(x))
+                    </code>
+                    </pre>
+                    <p>Here is a table that shows how to declare a variable for each data type mentionned above:</p>
+                    <table>
+                        <tr>
+                            <th>Example</th>
+                            <th>Data Type</th>
+                        </tr>
+                        <tr>
+                            <td><code>x = "Hello World"</code></td>
+                            <td>str</td>
+                        </tr>
+                        <tr>
+                            <td><code>x = 20</code></td>
+                            <td>int</td>
+                        </tr>
+                        <tr>
+                            <td><code>x = 20.5</code></td>
+                            <td>float</td>
+                        </tr>
+                        <tr>
+                            <td><code>x = 1j</code></td>
+                            <td>complex</td>
+                        </tr>
+                        <tr>
+                            <td><code>x = ["apple", "banana", "cherry"]</code></td>
+                            <td>list</td>
+                        </tr>
+                        <tr>
+                            <td><code>x = ("apple", "banana", "cherry")</code></td>
+                            <td>tuple</td>
+                        </tr>
+                        <tr>
+                            <td><code>x = range(6)</code></td>
+                            <td>range</td>
+                        </tr>
+                        <tr>
+                            <td><code>x = {"name": "Jhon", "age": 36}</code></td>
+                            <td>dict</td>
+                        </tr>
+                        <tr>
+                            <td><code>x = {"apple", "banana", "cherry"}</code></td>
+                            <td>set</td>
+                        </tr>
+                        <tr>
+                            <td><code>x = frozenset({"apple", "banana", "cherry"})</code></td>
+                            <td>frozenset</td>
+                        </tr>
+                        <tr>
+                            <td><code>x = True</code></td>
+                            <td>bool</td>
+                        </tr>
+                        <tr>
+                            <td><code>x = b"Hello"</code></td>
+                            <td>bytes</td>
+                        </tr>
+                        <tr>
+                            <td><code>x = bytearray(5)</code></td>
+                            <td>bytearray</td>
+                        </tr>
+                        <tr>
+                            <td><code>x = memoryview(bytes(5))</code></td>
+                            <td>memoryview</td>
+                        </tr>
+                    </table>
+                </p>
+            </div>
+        </section>
+        <br>
+        <section id="Python_Operators" class="main-section">
+            <header>Python Operators</header>
+            <div class="section-content">
+                <p>Operators are used to perform operations on variables and values. Python provides a variety of operators that can be used for a lot of needs. In this section, We ll present some of them in groups froo each need</p>
+                <div class="subtitle">Python Arithmetic Operators</div>
+                <p>These operators are used with numeric values to perform common mathematical operations:</p>
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Name</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>+</td>
+                        <td>Addition</td>
+                        <td>x + y</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Substraction</td>
+                        <td>x - y</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>Multiplication</td>
+                        <td>x * y</td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>Division</td>
+                        <td>x / y</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>Modulus</td>
+                        <td>x % y</td>
+                    </tr>
+                    <tr>
+                        <td>**</td>
+                        <td>Exponentiation</td>
+                        <td>x ** y</td>
+                    </tr>
+                    <tr>
+                        <td>//</td>
+                        <td>Floor Division</td>
+                        <td>x // y</td>
+                    </tr>
+                </table>
+                <br>
+                <div class="subtitle">Python Assignment Operators</div>
+                <p>These operators are used to assign values to variables:</p>
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Example</th>
+                        <th>Same as</th>
+                    </tr>
+                    <tr>
+                        <td>=</td>
+                        <td>x = 5</td>
+                        <td>x = 5</td>
+                    </tr>
+                    <tr>
+                        <td>+=</td>
+                        <td>x += 3</td>
+                        <td>x = x + 3</td>
+                    </tr>
+                    <tr>
+                        <td>-=</td>
+                        <td>x -= 3</td>
+                        <td>x = x - 3</td>
+                    </tr>
+                    <tr>
+                        <td>*=</td>
+                        <td>x *= 3</td>
+                        <td>x = x * 3</td>
+                    </tr>
+                    <tr>
+                        <td>/=</td>
+                        <td>x /= 3</td>
+                        <td>x = x / 3</td>
+                    </tr>
+                    <tr>
+                        <td>%=</td>
+                        <td>x %= 3</td>
+                        <td>x = x % 3</td>
+                    </tr>
+                    <tr>
+                        <td>//=</td>
+                        <td>x //= 3</td>
+                        <td>x = x // 3</td>
+                    </tr>
+                    <tr>
+                        <td>**=</td>
+                        <td>x **= 3</td>
+                        <td>x = x ** 3</td>
+                    </tr>
+                    <tr>
+                        <td>&amp;=</td>
+                        <td>x &amp;= 3</td>
+                        <td>x = x & 3</td>
+                    </tr>
+                    <tr>
+                        <td>|=</td>
+                        <td>x |= 3</td>
+                        <td>x = x | 3</td>
+                    </tr>
+                    <tr>
+                        <td>^=</td>
+                        <td>x ^= 3</td>
+                        <td>x = x ^ 3</td>
+                    </tr>
+                    <tr>
+                        <td>&#8811;=</td>
+                        <td>x &#8811;= 3</td>
+                        <td>x = x &#8811; 3</td>
+                    </tr>
+                    <tr>
+                        <td>&#8810;=</td>
+                        <td>x &#8811;= 3</td>
+                        <td>x = x &#8811; 3</td>
+                    </tr>
+                </table>
+                <br>
+                <div class="subtitle">Python Comparison Operators</div>
+                <p>These operators are used to compare two values:</p>
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Name</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>==</td>
+                        <td>Equal</td>
+                        <td>x == y</td>
+                    </tr>
+                    <tr>
+                        <td>!=</td>
+                        <td>Not equal</td>
+                        <td>x != y</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>Greater than</td>
+                        <td>x &gt; y</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;</td>
+                        <td>Less than</td>
+                        <td>x &lt; y</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;=</td>
+                        <td>Greater than or equal to</td>
+                        <td>x &gt;= y</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;=</td>
+                        <td>Less than or equal to</td>
+                        <td>x &lt;= y</td>
+                    </tr>
+                </table>
+                <br>
+                <div class="subtitle">Python Logical Operators</div>
+                <p>These operators are used to combine conditionnal statements:</p>
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>and</td>
+                        <td>returns True if both statements are true</td>
+                        <td>x &lt; 5 and x &lt; 10</td>
+                    </tr>
+                    <tr>
+                        <td>or</td>
+                        <td>returns true if one of the statements is true</td>
+                        <td>x &lt; 5 or x &lt; 4</td>
+                    </tr>
+                    <tr>
+                        <td>not</td>
+                        <td>reverse the result, returns False if the result is true</td>
+                        <td>not(x &lt; 5 and x &lt; 10)</td>
+                    </tr>
+                </table>
+                <br>
+                <div class="subtitle">Python Identity Operators</div>
+                <p>These operators are used to compare the objects, not if they are equal but if they are actually the same object with the same memoy location:</p>
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>is</td>
+                        <td>Returns True if both variables are the same object</td>
+                        <td>x is y</td>
+                    </tr>
+                    <tr>
+                        <td>is not</td>
+                        <td>Returns True if both variables are not the same object</td>
+                        <td>x is not y</td>
+                    </tr>
+                </table>
+                <br>
+                <div class="subtitle">Python Membership Operators</div>
+                <p>These operators are used to test if a sequence is presented in an object:</p>
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                </table>
+            </div>
+        </section>
+        <br>
+        <section id="If_Statement" class="main-section">
+            <header>If Statement</header>
+            <div class="section-content">
+                <p></p>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

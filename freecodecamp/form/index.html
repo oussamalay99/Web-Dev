@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Please fill out this form to help us improve our product.</p>
+        </header>
+        <hr>
+        <form action=" " id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label" class="strong">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" class="block" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label" class="strong">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" class="block" required>
+
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label" class="strong">Age</label>
+                <input type="number" id="number" name="age" min="5" max="99" placeholder="Age" class="block">
+
+            </div>
+            <div class="form-group">
+                <label for="dropdown" class="strong">Please select your gender</label>
+                <select id="dropdown" name="gender" class="block" placeholder="Please choose one option of the following">
+                    <option disabled selected>Please choose one option of the following</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p class="strong">How satisfied you are about our product :</p>
+                <label>
+                    <input type="radio" name="satisfaction" value="VS" class="inline-block" >Very satisfied
+                </label>
+                <label>
+                    <input type="radio" name="satisfaction" value="S" class="inline-block">Satsfied
+                </label>
+                <label>                
+                    <input type="radio" name="satisfaction" value="NS" class="inline-block">Unsatsfied
+                </label>
+            </div>
+            <div class="form-group ">
+                <p class="strong ">Please check the parts of our product tha we should improve:</p>
+                <label>
+                    <input type="checkbox" name="fix" value="quality" class="inline-block">Quality
+                </label>
+                <label>
+                    <input type="checkbox" name="fix" value="design" class="inline-block">Design
+                </label>
+                <label>
+                    <input type="checkbox" name="fix" value="access" class="inline-block">Accessibilty
+                </label>
+            </div>
+            <div id="comment " class="form-group">
+                <label for="comment" class="strong"><i>Feel free to leave us a comment</i></label>
+                <textarea name="comment" id="comment" placeholder="Type your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
